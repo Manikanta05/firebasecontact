@@ -1,13 +1,16 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
-var config = {
-  apiKey: "xxxxx",
-  authDomain: "xxxxx",
-  databaseURL: "xxxxx",
-  projectId: "xxxxx",
-  storageBucket: "xxxxx",
-  messagingSenderId: "xxxxx"
-};
-firebase.initializeApp(config);
+ var firebaseConfig = {
+    apiKey: "AIzaSyBWdj9K-G-RAJw-ETHqdiTGv-BrOugeqPc",
+    authDomain: "contactform-de47d.firebaseapp.com",
+    projectId: "contactform-de47d",
+    storageBucket: "contactform-de47d.appspot.com",
+    messagingSenderId: "406505935707",
+    appId: "1:406505935707:web:142821a60d195cb88c807e",
+    measurementId: "G-D5W9FK990Q"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
